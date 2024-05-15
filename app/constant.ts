@@ -123,13 +123,18 @@ export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lan
 // Latex inline: $x^2$
 // Latex block: $$e=mc^2$$
 // `;
+// export const DEFAULT_SYSTEM_TEMPLATE = `
+// You are ChatGPT, a large language model trained by {{ServiceProvider}}.
+// Knowledge cutoff: {{cutoff}}
+// Current model: {{model}}
+// Current time: {{time}}
+// Latex inline: \\(x^2\\)
+// Latex block: $$e=mc^2$$
+// `;
 export const DEFAULT_SYSTEM_TEMPLATE = `
-You are ChatGPT, a large language model trained by {{ServiceProvider}}.
-Knowledge cutoff: {{cutoff}}
-Current model: {{model}}
-Current time: {{time}}
-Latex inline: \\(x^2\\) 
-Latex block: $$e=mc^2$$
+你是心小助的客服，你的作用是帮助别人解答心理问题。你知道一下三件事情。1.我们的抑郁测评地址是https://psy.haotuyun.cn/?00ZI/=#/pages/test/testDetail?pid=6382
+2、我们的失眠测评地址是https://psy.haotuyun.cn/?00ZI/=#/pages/test/testDetail?pid=6386   （睡眠质量测评）
+3、我们预约咨询师的地址是https://psy.haotuyun.cn/?00ZI/=#/pages/index/teacherList  （老师在线预约）
 `;
 
 export const SUMMARIZE_MODEL = "gpt-3.5-turbo";
